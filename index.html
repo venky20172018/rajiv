@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bright Future Academy - Excellence in English & Mathematics</title>
@@ -20,12 +20,572 @@
 
     <link rel="icon" href="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=32&h=32&fit=crop" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap">
-  </head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <div class="logo-text">
+                        <h1>Bright Future Academy</h1>
+                        <p>Excellence in Education</p>
+                    </div>
+                </div>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#programs" class="nav-link">Programs</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#contact" class="nav-button">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav" id="mobile-nav">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#programs" class="mobile-nav-link">Programs</a>
+                <a href="#gallery" class="mobile-nav-link">Gallery</a>
+                <a href="#contact" class="mobile-nav-button">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Building <span class="text-primary">Bright Futures</span> Through Quality Education
+                    </h1>
+                    <p class="hero-description">
+                        Excellence in English and Mathematics education for rural students. 
+                        Empowering young minds with the skills they need to succeed in tomorrow's world.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Enroll Your Child</a>
+                        <a href="#about" class="btn btn-outline">Learn More</a>
+                    </div>
+
+                    <!-- Statistics -->
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-icon">👥</div>
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Students</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">📚</div>
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">🏆</div>
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">⭐</div>
+                            <div class="stat-number">4.9</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop&crop=faces" 
+                         alt="Students learning in classroom" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Bright Future Academy?</h2>
+                <p>We understand the unique challenges faced by rural families and are committed 
+                   to providing world-class education that opens doors to endless opportunities.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
+                         alt="Students learning mathematics with technology" />
+                </div>
+                <div class="about-text">
+                    <h3>Excellence in English & Mathematics</h3>
+                    <p>Our specialized curriculum focuses on building strong foundations in English and Mathematics - 
+                       the two subjects that open the most doors for rural students seeking higher education and career opportunities.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="check-icon">✓</span>
+                            <span>Interactive English learning with focus on communication skills</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="check-icon">✓</span>
+                            <span>Conceptual mathematics teaching for strong problem-solving abilities</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="check-icon">✓</span>
+                            <span>Regular assessments and personalized attention</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="check-icon">✓</span>
+                            <span>Career guidance and higher education counseling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h4>Focused Curriculum</h4>
+                    <p>Specialized programs in English and Mathematics designed for rural students</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h4>Caring Environment</h4>
+                    <p>Nurturing and supportive atmosphere where every child feels valued</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h4>Innovative Teaching</h4>
+                    <p>Modern teaching methods combined with traditional values</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h4>Proven Results</h4>
+                    <p>Track record of students excelling in higher education and careers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Specialized Programs</h2>
+                <p>Designed specifically for rural students, our programs provide the foundation 
+                   needed for success in higher education and professional careers.</p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-icon">📖</div>
+                        <h3>English Mastery Program</h3>
+                    </div>
+                    <p>Comprehensive English language program focusing on reading, writing, speaking, and communication skills.</p>
+                    <div class="program-features">
+                        <div class="program-feature">• Grammar and vocabulary building</div>
+                        <div class="program-feature">• Creative writing workshops</div>
+                        <div class="program-feature">• Public speaking training</div>
+                        <div class="program-feature">• English literature appreciation</div>
+                    </div>
+                    <div class="program-details">
+                        <div class="program-detail">
+                            <span class="detail-icon">🕒</span>
+                            <span>Academic Year Program</span>
+                        </div>
+                        <div class="program-detail">
+                            <span class="detail-icon">👥</span>
+                            <span>All Grade Levels</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-icon">🧮</div>
+                        <h3>Mathematics Excellence</h3>
+                    </div>
+                    <p>Advanced mathematics curriculum designed to build strong analytical and problem-solving capabilities.</p>
+                    <div class="program-features">
+                        <div class="program-feature">• Conceptual learning approach</div>
+                        <div class="program-feature">• Real-world problem solving</div>
+                        <div class="program-feature">• Mental mathematics training</div>
+                        <div class="program-feature">• Competitive exam preparation</div>
+                    </div>
+                    <div class="program-details">
+                        <div class="program-detail">
+                            <span class="detail-icon">🕒</span>
+                            <span>Academic Year Program</span>
+                        </div>
+                        <div class="program-detail">
+                            <span class="detail-icon">👥</span>
+                            <span>All Grade Levels</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-cta">
+                <a href="#contact" class="btn btn-primary">Enroll Your Child Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Life at Bright Future Academy</h2>
+                <p>Take a glimpse into our vibrant learning environment where students thrive, 
+                   learn, and build the skills they need for a successful future.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop" 
+                         alt="Students working together on group projects" />
+                    <div class="gallery-overlay">
+                        <h4>Collaborative Learning</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
+                         alt="Mathematics class with modern teaching methods" />
+                    <div class="gallery-overlay">
+                        <h4>Interactive Mathematics</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
+                         alt="Students using technology for learning" />
+                    <div class="gallery-overlay">
+                        <h4>Digital Learning</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop" 
+                         alt="English language learning session" />
+                    <div class="gallery-overlay">
+                        <h4>English Communication</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="https://images.unsplash.com/photo-1473091534298-04dcbce3278c?w=600&h=400&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1473091534298-04dcbce3278c?w=600&h=400&fit=crop" 
+                         alt="Students engaged in creative writing" />
+                    <div class="gallery-overlay">
+                        <h4>Creative Expression</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for expanded image view -->
+        <div id="gallery-modal" class="gallery-modal">
+            <div class="modal-content">
+                <button class="modal-close" id="modal-close">&times;</button>
+                <img id="modal-image" src="" alt="Expanded gallery image" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Families Say</h2>
+                <p>Real stories from parents and students who have experienced the transformative 
+                   power of quality education at Bright Future Academy.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <div class="testimonial-quote">
+                        <span class="quote-icon">"</span>
+                        <p>My daughter's English has improved tremendously since joining Bright Future Academy. She now speaks confidently and her grades have improved significantly. The teachers really care about each child's progress.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" 
+                             alt="Rajesh Kumar" />
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>Parent</p>
+                            <small>Farmer, Nearby Village</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <div class="testimonial-quote">
+                        <span class="quote-icon">"</span>
+                        <p>The mathematics program here is excellent. My son was struggling with math before, but now he enjoys solving problems and has secured admission in a good engineering college. Thank you BFA!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face" 
+                             alt="Sunita Devi" />
+                        <div class="author-info">
+                            <h4>Sunita Devi</h4>
+                            <p>Parent</p>
+                            <small>Small Business Owner</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <div class="testimonial-quote">
+                        <span class="quote-icon">"</span>
+                        <p>BFA gave me the confidence to dream big. The English communication skills I learned here helped me crack my college interviews. Now I'm studying to become a teacher myself!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" 
+                             alt="Priya Sharma" />
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Student</p>
+                            <small>Class 12 Graduate</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Enroll Your Child Today</h2>
+                <p>Give your child the gift of quality education. Contact us to learn more about admission 
+                   process and how we can help your child achieve their dreams.</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Visit Our Campus</h4>
+                            <p>123 Education Street<br>
+                               Central District<br>
+                               Your City, State 123456</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+91 98765 43210<br>
+                               +91 87654 32109</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>info@brightfutureacademy.edu<br>
+                               admissions@brightfutureacademy.edu</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h4>Office Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+                               Saturday: 9:00 AM - 2:00 PM<br>
+                               Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="enrollment-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parentName">Parent/Guardian Name *</label>
+                                <input type="text" id="parentName" name="parentName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="childName">Child's Name *</label>
+                                <input type="text" id="childName" name="childName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="childAge">Child's Age *</label>
+                                <input type="number" id="childAge" name="childAge" min="5" max="18" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="grade">Current Grade *</label>
+                                <select id="grade" name="grade" required>
+                                    <option value="">Select Grade</option>
+                                    <option value="1">Class 1</option>
+                                    <option value="2">Class 2</option>
+                                    <option value="3">Class 3</option>
+                                    <option value="4">Class 4</option>
+                                    <option value="5">Class 5</option>
+                                    <option value="6">Class 6</option>
+                                    <option value="7">Class 7</option>
+                                    <option value="8">Class 8</option>
+                                    <option value="9">Class 9</option>
+                                    <option value="10">Class 10</option>
+                                    <option value="11">Class 11</option>
+                                    <option value="12">Class 12</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Interest Area</label>
+                                <select id="subject" name="subject">
+                                    <option value="">Select Subject</option>
+                                    <option value="english">English</option>
+                                    <option value="mathematics">Mathematics</option>
+                                    <option value="both">Both English & Math</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" rows="4" 
+                                      placeholder="Tell us about your child's goals, any specific concerns, or questions you may have..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            📩 Submit Enrollment Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- School Info -->
+                <div class="footer-section footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🎓</div>
+                        <div class="logo-text">
+                            <h3>Bright Future Academy</h3>
+                            <p>Excellence in Education</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Empowering rural students with quality English and Mathematics education. 
+                        Building bright futures through dedicated teaching and innovative learning methods.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📸</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <p>123 Education Street</p>
+                                <p>Central District</p>
+                                <p>Your City, State 123456</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <p>+91 98765 43210</p>
+                                <p>+91 87654 32109</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <p>info@brightfutureacademy.edu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Bright Future Academy. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Admissions Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
